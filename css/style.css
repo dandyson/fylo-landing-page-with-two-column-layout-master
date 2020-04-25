@@ -1,0 +1,341 @@
+/**MOBILE FIRST DESIGN**/
+
+/*General*/
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0 auto;
+}
+
+.topBodyGrid {
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.midBodyGrid {
+    background-color: #F8F8FF;
+    display: grid;
+    grid-template-columns: 100%;
+    padding-bottom: 75px;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+}
+
+#navMenu ul {
+    padding: 0;
+}
+
+#navMenu ul li {
+    font-size: 0.7em;
+    list-style: none;
+    display: inline;
+    padding: 7px;
+}
+
+/*Nav*/
+#topLogoDiv img {
+    padding: 15px;
+    height: 25px;
+}
+
+/*Top Content*/
+#topImg {
+    margin-top: 65px;
+    text-align: center;
+}
+
+#topImg img {
+    height: 225px;
+}  
+
+#topText {
+    text-align: center;
+}
+
+#topText h1 {
+    font-weight: 700;
+    margin: 30px auto;
+    width: 90%;
+    font-size: 1.6em;
+    line-height: 1.5em;
+}
+
+#topText p {
+    font-weight: 400;
+    line-height: 1.5em;
+    margin: 0 auto;
+    width: 80%;
+    font-size: 0.9em;
+}
+
+#topText input {
+    margin-top: 30px;
+    padding-left: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 35px;
+    width: 70%;
+}
+
+#topText button {
+    font-weight: 700;
+    color: white;
+    background-color: #2F65F9;
+    margin-top: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 40px;
+    width: 80%;
+    -webkit-box-shadow: 6px 7px 5px 0px rgba(0,0,0,0.08);
+-moz-box-shadow: 6px 7px 5px 0px rgba(0,0,0,0.08);
+box-shadow: 6px 7px 5px 0px rgba(0,0,0,0.08);
+}
+
+/* Curve */
+
+#curve {
+    margin-top: 50px;
+    width: 100%;
+    height: 30px;
+    background-image: url('../images/bg-curve-mobile.svg');
+    background-repeat: no-repeat;
+}
+
+/* Middle Content */
+
+#mainImgDiv {
+ margin: 0;
+ text-align: center;
+}
+
+#mainImgDiv img {
+    margin-top: 50px;
+    height: 225px;
+}
+
+#midTextDiv {
+    margin: 0 auto;
+    width: 90%;
+}
+
+#midTextDiv h1 {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.midPara {
+    font-size: 0.9em;
+    line-height: 1.5em;
+    margin: 20px auto;
+    padding-left: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#midTextDiv h6 {
+    color: #5BAC9E;
+    margin: 0 auto;
+    border-bottom: 1px solid #5BAC9E;
+    width:36%;
+    height: 25px;
+    margin-bottom: 40px;
+}
+
+#midTextDiv img {
+    position: relative;
+    top: 4px;
+    left: 5px;
+}
+
+#testimonial {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+    height: 100%;
+    width: 75%;
+    background-color: white;
+    -webkit-box-shadow: 6px 7px 5px 0px rgba(0,0,0,0.08);
+    -moz-box-shadow: 6px 7px 5px 0px rgba(0,0,0,0.08);
+    box-shadow: 6px 7px 5px 0px rgba(0,0,0,0.08);
+}
+
+
+#testimonial p {
+    padding-left: 5px;
+    font-size: 0.7em;
+    line-height: 1.5em;
+}
+
+#avatar {
+    border-radius: 50%;
+    height: 30px;
+}
+
+#avatarDiv {
+    display: inline;
+}
+
+#avatarDiv h5 {
+    margin: 0;
+    font-size: 0.6em;
+}
+
+#avatarDiv p {
+    padding-left: 0;
+    margin: 0;
+    font-size: 0.6em;
+}
+
+#avatarDiv h5, #avatarDiv p {
+    position: relative;
+    top: -25px;
+    left: 40px;
+}
+
+/** CTA Div **/
+
+#ctaDiv {
+    padding: 30px 30px 60px 30px;
+    color: white;
+    text-align: center;
+    background-color: #575989;
+}
+
+#ctaDiv h1 {
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+#ctaDiv p {
+    font-size: 0.5em;
+    font-weight: 400;
+    line-height: 1.5em;
+    margin: 0 auto;
+    width: 90%;
+    font-size: 0.9em; 
+}
+
+#ctaDiv input {
+    margin-top: 30px;
+    padding-left: 10px;
+    border: 1px solid black;
+    border-radius: 2px;
+    height: 30px;
+    width: 75%;
+}
+
+#ctaDiv button {
+    font-size: 0.7em;
+    font-weight: 700;
+    color: white;
+    background-color: #2F65F9;
+    margin-top: 5px;
+    border: 1px solid black;
+    border-radius: 2px;
+    height: 35px;
+    width: 80%;
+
+}
+
+/** Footer **/
+
+footer {
+    color: white;
+    height: 100%;
+    background-color: #07043B;
+}
+
+#footerLogo {
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+#contactDiv {
+    padding-top: 40px;
+    padding-left: 20px;
+}
+
+#contactDiv img {
+    height: 25px;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+li {
+    width: 90%;
+    padding-left: 11px;
+    padding-bottom: 10px;
+}
+
+/* Footer list images */
+
+ul.phone {
+    list-style-image: url('../images/icon-phone.svg');
+}
+
+ul.email {
+    list-style-image: url('../images/icon-email.svg');
+    margin-bottom: 0;
+    padding-bottom: 15px;
+}
+
+/*Footer nav */
+
+#footerNav {
+    margin-top: 20px;
+
+}
+
+.navList {
+    list-style: none;
+    font-size: 0.85em;
+    padding-left: 10px;
+} 
+
+.navList li {
+    padding: 10px;
+}
+
+/* Social Div */
+
+#socialDiv {
+    text-align: center;
+    padding: 20px;
+}
+
+#socialDiv img {
+    height: 25px;
+    padding: 5px;
+}
+
+#socialDiv p {
+    margin-top: 15px;
+    font-size: 0.7em;
+}
+
+
+
+
+.attribution {
+    margin: 0;
+    padding: 20px;
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
