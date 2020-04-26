@@ -100,6 +100,7 @@ box-shadow: 6px 7px 5px 0px rgba(0,0,0,0.08);
 /* Curve */
 
 #curve {
+    position: static;
     margin-top: 50px;
     width: 100%;
     height: 30px;
@@ -145,7 +146,7 @@ a {
     color: #5BAC9E;
     margin: 0 auto;
     border-bottom: 1px solid #5BAC9E;
-    width:36%;
+    width: 125px;
     height: 25px;
     margin-bottom: 40px;
 }
@@ -204,11 +205,14 @@ a {
 
 /** CTA Div **/
 
+.ctaSection {
+    background-color: #575989;
+}
+
 #ctaDiv {
-    padding: 30px 30px 60px 30px;
+    padding: 30px 30px 10px 30px;
     color: white;
     text-align: center;
-    background-color: #575989;
 }
 
 #ctaDiv h1 {
@@ -226,7 +230,12 @@ a {
     font-size: 0.9em; 
 }
 
-#ctaDiv input {
+#ctaInputDiv {
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+#ctaInputDiv input {
     margin-top: 30px;
     padding-left: 10px;
     border: 1px solid black;
@@ -235,7 +244,7 @@ a {
     width: 75%;
 }
 
-#ctaDiv button {
+#ctaInputDiv button {
     font-size: 0.7em;
     font-weight: 700;
     color: white;
@@ -256,10 +265,6 @@ footer {
     background-color: #07043B;
 }
 
-#footerLogo {
-    padding-top: 50px;
-    padding-left: 20px;
-}
 
 #contactDiv {
     padding-top: 40px;
@@ -267,7 +272,7 @@ footer {
 }
 
 #contactDiv img {
-    height: 25px;
+    height: 55px;
 }
 
 ul {
@@ -296,7 +301,6 @@ ul.email {
 
 #footerNav {
     margin-top: 20px;
-
 }
 
 .navList {
@@ -321,14 +325,6 @@ ul.email {
     padding: 5px;
 }
 
-#socialDiv p {
-    margin-top: 15px;
-    font-size: 0.7em;
-}
-
-
-
-
 .attribution {
     margin: 0;
     padding: 20px;
@@ -339,3 +335,250 @@ ul.email {
   .attribution a {
     color: hsl(228, 45%, 44%);
   }
+
+  /**************************MEDIA QUERIES FOR DESKTOP **************************/
+
+  @media (min-width: 800px) {
+      /** nav **/
+      #navMenu ul {
+        text-align: right;
+        padding-right: 60px;
+    }
+
+    #topLogoDiv img {
+        padding-left: 60px;
+    }
+
+    /** Top content **/
+
+    .topBodyGrid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%;
+    }
+
+    #topImg {
+       grid-column-start: 2;
+       grid-column-end: 3;
+    }
+
+    #topImg img {
+        height: 250px;
+    }
+
+    #topText {
+        grid-row-start: 1;
+        grid-column-start: 1;
+    }
+
+    #topText {
+        margin-top: 35px;
+        margin-left: 50px;
+        padding: 60px 0 0 40px;
+        text-align: left;
+    }
+    
+    #topText h1 {
+        margin: 0;
+        max-width: 80%;
+        font-size: 1.6em;
+    }
+    
+    #topText p {
+        font-size: 0.75em;
+        margin: 0;
+        max-width: 95%;
+        font-weight: 400;
+    }
+    
+    #topText input {
+        margin-top: 15px;
+        padding-left: 30px;
+        height: 25px;
+        width: 40%;
+        border-radius: 3px;
+    }
+    
+    #topText button {
+        font-size: 0.6em;
+        font-weight: 400;
+        height: 30px;
+        width: 30%;
+
+    }
+
+    #curve {
+        position: static;
+        margin-top: 100px;
+        height: 65px;
+        background-image: url('../images/bg-curve-desktop.svg');
+        width: 100%;
+    }
+
+
+    /* Middle Content */
+
+    .midBodyGrid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%;
+    }
+
+    #mainImgDiv {
+    grid-column-start: 2;
+    grid-column-end: 3;
+   }
+   
+   #mainImgDiv img {
+       margin-top: 125px;
+       height: 350px;
+   }
+   
+   #midTextDiv {
+    margin-left: 50px;   
+    padding-left: 30px;
+    grid-row-start: 1;
+    grid-column-start: 1;
+   }
+   
+   #midTextDiv h1 {
+       text-align: left;
+       font-size: 2em;
+   }
+   
+   .midPara {
+       margin-top: 10px;
+       padding-left: 0px;
+   }
+
+   
+   #midTextDiv h6 {
+       margin: 0;
+       height: 25px;
+       margin-bottom: 40px;
+   }
+
+/** Testimonial **/
+
+   #testimonial {
+    margin: 0;
+    width: 45%;
+}
+
+/** CTA Div **/
+.ctaSection {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+}
+
+#ctaDiv {
+    margin-left: 50px;
+    padding: 60px;
+    text-align: left;
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+
+#ctaInputDiv {
+    margin-left: 50px;
+    margin-top: 50px;
+    text-align: left;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#ctaDiv h1 {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 1.5em;
+    line-height: 1.8em;
+}
+
+#ctaDiv p {
+    font-size:  500px;
+    margin: 0;
+    width: 90%;
+    font-size: 0.9em; 
+}
+
+#ctaInputDiv input {
+    border: 1px solid black;
+    border-radius: 2px;
+    height: 40px;
+    width: 75%;
+    -webkit-box-shadow: 6px 7px 5px 0px rgba(0,0,0,0.08);
+    -moz-box-shadow: 6px 7px 5px 0px rgba(0,0,0,0.08);
+    box-shadow: 6px 7px 5px 0px rgba(0,0,0,0.08);
+}
+
+#ctaInputDiv button {
+    font-size: 0.7em;
+    font-weight: 700;
+    color: white;
+    background-color: #2F65F9;
+    margin-top: 20px;
+    border: none;
+    border-radius: 2px;
+    height: 45px;
+    width: 30%;
+    -webkit-box-shadow: 6px 7px 5px 0px rgba(0,0,0,0.08);
+    -moz-box-shadow: 6px 7px 5px 0px rgba(0,0,0,0.08);
+    box-shadow: 6px 7px 5px 0px rgba(0,0,0,0.08);
+}
+
+/** Footer **/
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100%;
+}
+
+#footerLogo {
+    padding-top: 50px;
+    padding-left: 0px;
+}
+
+#contactDiv {
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+#contactDiv img {
+    height: 55px;
+}
+
+/*Footer nav */
+
+#navListLeft {
+    float: left;
+}
+
+#navListRight {
+    float: right;
+}
+
+#footerNav {
+    margin-top: 140px;
+}
+
+/* Social Div */
+
+#socialDiv {
+    margin-top: 130px;
+}
+
+.attribution {
+    margin-top: 150px;
+    padding: 20px;
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+   
+
+}
