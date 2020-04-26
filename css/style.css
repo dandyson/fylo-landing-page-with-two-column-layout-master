@@ -338,7 +338,7 @@ ul.email {
 
   /**************************MEDIA QUERIES FOR DESKTOP **************************/
 
-  @media (min-width: 800px) {
+  @media (min-width: 500px) {
       /** nav **/
       #navMenu ul {
         text-align: right;
@@ -363,7 +363,7 @@ ul.email {
     }
 
     #topImg img {
-        height: 250px;
+        height: 300px;
     }
 
     #topText {
@@ -372,15 +372,15 @@ ul.email {
     }
 
     #topText {
-        margin-top: 35px;
-        margin-left: 50px;
+        margin-top: 75px;
+        margin-left: 180px;
         padding: 60px 0 0 40px;
         text-align: left;
     }
     
     #topText h1 {
         margin: 0;
-        max-width: 80%;
+        max-width: 90%;
         font-size: 1.6em;
     }
     
@@ -435,7 +435,7 @@ ul.email {
    }
    
    #midTextDiv {
-    margin-left: 50px;   
+    margin-left: 100px;   
     padding-left: 30px;
     grid-row-start: 1;
     grid-column-start: 1;
@@ -473,7 +473,7 @@ ul.email {
 }
 
 #ctaDiv {
-    margin-left: 50px;
+    margin-left: 75px;
     padding: 60px;
     text-align: left;
     grid-row-start: 1;
